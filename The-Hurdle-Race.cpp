@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
 string ltrim(const string &);
@@ -15,7 +14,8 @@ vector<string> split(const string &);
  *  2. INTEGER_ARRAY height
  */
 
-int hurdleRace(int k, vector<int> height) {
+int hurdleRace(int k, vector<int> height)
+{
     int max_value = *std::max_element(height.cbegin(), height.cend()) - k;
     return std::max(max_value, 0);
 }
